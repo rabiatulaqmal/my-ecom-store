@@ -6,6 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="#">Rabiatul Aqmal Store</a>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link active" href="#">Home</a>
+      <a class="nav-link" href="/admin">Admin Dashboard</a>
     <div id="app" class="container mt-5">
         <h1 class="text-primary text-center">[[ storeName ]]</h1>
         <p class="text-center text-muted">Owner: Rabiatul Aqmal binti Mokhtar</p>
@@ -16,6 +22,9 @@
                     <div class="card-body">
                         <h5 class="card-title">[[ product.name ]]</h5>
                         <button @click="buyProduct(product.name)" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </nav>
                     </div>
                 </div>
             </div>
