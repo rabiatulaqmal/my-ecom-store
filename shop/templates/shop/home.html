@@ -53,3 +53,21 @@
     </script>
 </body>
 </html>
+
+{% verbatim %}
+<div id="app" class="container mt-5">
+    <h1 class="text-primary text-center">[[ storeName ]]</h1>
+    <p class="text-center text-muted">Owner: Rabiatul Aqmal binti Mokhtar</p>
+    
+    <div class="row mt-4">
+        <div v-for="product in products" class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">[[ product.name ]]</h5>
+                    <button @click="buyProduct(product.name)" class="btn btn-success">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endverbatim %}
